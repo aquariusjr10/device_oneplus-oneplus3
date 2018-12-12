@@ -25,5 +25,11 @@
 /dev/block/platform/soc/624000.ufshc/by-name/oem_stanvbk        u:object_r:modem_efs_partition_device:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.param@1\.0-service                    u:object_r:hal_param_default_exec:s0
 
-# Widevine
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service.widevine                     u:object_r:hal_drm_widevine_exec:s0
+# RMT
+/dev/block/sde7    u:object_r:rmt_storage_block_device:s0
+/dev/block/sdf1    u:object_r:rmt_storage_block_device:s0
+/dev/block/sdf2    u:object_r:rmt_storage_block_device:s0
+/dev/block/sdf3    u:object_r:rmt_storage_block_device:s0
+
+# Thermal
+/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@2\.0-service\.pixel         u:object_r:hal_thermal_default_exec:s0
