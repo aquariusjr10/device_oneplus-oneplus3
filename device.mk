@@ -478,6 +478,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libui_shim
 
+# SurfaceFlinger
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.use_smart_90_for_video=true
+ro.surface_flinger.set_display_power_timer_ms=10000
+ro.surface_flinger.set_touch_timer_ms=5000
+ro.surface_flinger.set_idle_timer_ms=9000
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
